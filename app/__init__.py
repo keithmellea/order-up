@@ -8,7 +8,8 @@ from flask_login import LoginManager
 
 app = Flask(__name__)
 app.config.from_object(Configuration)
-app.register_blueprint(orders.bp, session.bp)
+app.register_blueprint(orders.bp)
+app.register_blueprint(session.bp)
 db.init_app(app)
 
 login = LoginManager(app)
