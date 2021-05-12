@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect
 from flask.helpers import url_for
-from flask_login import current_user, login_user
+from flask_login import current_user, login_user, logout_user
 from ..forms import LoginForm
 from ..models import Employee
 
