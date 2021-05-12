@@ -4,6 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 db = SQLAlchemy()
 
+
 class Employee(db.Model, UserMixin):
     __tablename__ = "employees"
     id = db.Column(db.Integer, primary_key=True)
